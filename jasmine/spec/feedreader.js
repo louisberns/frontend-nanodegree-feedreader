@@ -79,11 +79,11 @@ $(function() {
 
             i.trigger(event);
 
-            expect(b[0].classList.value).not.toContain('menu-hidden');
+            expect(b[0].classList).not.toContain('menu-hidden');
 
             i.trigger(event);
 
-            expect(b[0].classList.value).toContain('menu-hidden');
+            expect(b[0].classList).toContain('menu-hidden');
         });
     });
 

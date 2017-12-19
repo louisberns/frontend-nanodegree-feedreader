@@ -5,6 +5,8 @@ In this project you are given a web-based application that reads RSS feeds. The 
 
 ## How to run this project?
 - Clone this repo ```$ git clone https://github.com/louisberns/frontend-nanodegree-feedreader.git```
+- Open the project folder and open ```index.html``` on the browser
+- If you want to see the tests, open the Jasmine folder then Spec, file ```feedreader.js```
 
 You can check the [Jasmine Site](https://jasmine.github.io/) to more info about the testing suites and specs.
 

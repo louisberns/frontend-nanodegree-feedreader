@@ -116,27 +116,27 @@ $(function() {
          */
         var feed = $('.feed'),
             entry = $('.entry'),
-            control = {
-                initial: 0,
-                change: false
-            };
+            control,
+            newContent;
 
-        control.initial = entry.length;
-        console.log(control.initial, allFeeds);
+        control = feed.html();
+        console.log(control);
         
 
         beforeEach((done) => {
             setTimeout(() => {
+                loadFeed(1);
                 loadFeed(2);
+                newContent = feed.html();
                 done();
             }, 3000);
         });
 
-        console.log(entry.length);
+        console.log(control);
 
         it('content should change when load new feed', function(done) {
-            expect(entry.length > 10).toBe(true);
-            console.log(entry.length, allFeeds);
+            expect(control === newContent).not.toBe(true);
+            console.log(control, newContent);
             done();
         });
     });

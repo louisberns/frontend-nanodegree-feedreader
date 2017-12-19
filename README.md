@@ -4,7 +4,7 @@ In this project you are given a web-based application that reads RSS feeds. The 
 
 
 ## How to run this project?
-- Clone this repo `$ git clone https://github.com/louisberns/frontend-nanodegree-feedreader.git`
+- Clone this repo ```$ git clone https://github.com/louisberns/frontend-nanodegree-feedreader.git```
 
 You can check the [Jasmine Site](https://jasmine.github.io/) to more info about the testing suites and specs.
 
